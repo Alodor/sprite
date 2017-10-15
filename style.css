@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #fefefe;
+}
+
+#megaman {
+    position: fixed;
+    top: 100px;
+    width: 92px;
+    height: 140px;
+    background-image: url('personaje.png');
+    animation: sprite .5s steps(7) infinite;
+}
+
+@keyframes sprite {
+    from {
+        background-position: -10px 0%;
+    }
+    
+    to {
+        background-position: right;
+    }
+}
+
+p {
+    margin-top: 300px;
+    font-size: 1.5em;
+}
